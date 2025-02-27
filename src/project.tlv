@@ -15,9 +15,9 @@
    
    
    
-   $size[1:0] =     $weight[7:0] >= 8'd64 ?    3 
-                :   $weight[7:0] >= 8'd56 ?    2
-                :   1;
+   $size[1:0] =     $weight[7:0] >= 8'd64 ?    2'd3 
+                :   $weight[7:0] >= 8'd56 ?    2'd2
+                :   2'd1;
    
    
    // Assert these to end simulation (before Makerchip cycle limit).
